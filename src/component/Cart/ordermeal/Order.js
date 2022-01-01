@@ -12,7 +12,7 @@ const valiadatePostCode = (val) =>
 
 const OrderForm = (props) => {
   const {items, totalAmount, reset} = useContext(cartContext);
-  const {SendRequest: sentOrder, error, isLoading} = useHttp();
+  const {SendRequest: sentOrder} = useHttp();
   const SentOrderCallback = (data) => {
     console.log(data);
   };
